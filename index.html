@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/786ee52f20.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <h1 class="centre">Calculator using HTML,CSS,Javascript</h1>
+    <h2 class="centre">Welcome to calculate me </h2>
+    <div class="container flex flex-col items-center bg-red mx-auto">
+        <div class="row input">
+            <input class="input1"  type="text"  readonly>
+            <input class="input2"  type="text" value="0">
+        </div>
+        <div class="row">
+            <button class="button" onclick="clr()" style="background-color: red;">AC</button>
+            <button class="button" onclick="backspace()">Del</button>
+            <button class="button" onclick="getval('%')">%</button>
+            <button class="button" onclick="getval('/')">/</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="getval('7')">7</button>
+            <button class="button" onclick="getval('8')">8</button>
+            <button class="button" onclick="getval('9')">9</button>
+            <button class="button" onclick="getval('*')">*</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="getval('4')">4</button>     
+            <button class="button" onclick="getval('5')">5</button>
+            <button class="button" onclick="getval('6')">6</button>
+            <button class="button" onclick="getval('+')">+</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="getval('1')">1</button>
+            <button class="button" onclick="getval('2')">2</button>
+            <button class="button" onclick="getval('3')">3</button>
+            <button class="button" onclick="getval('-')">-</button>
+        </div>
+
+        <div class="row">
+            <button class="button">.</button>
+            <button class="button" onclick="getval('0')">0</button>
+            <button class="button history" onclick="history()">H</button>  
+            <button class="button equal" onclick="getans()">=</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="history-div"></div>
+    </div>
+
+
+    <script src="JS/index.js"></script>
+</body> 
+</html>
